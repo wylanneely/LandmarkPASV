@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct LandmarkList: View {
     
     @Environment(ModelData.self) var modelData
@@ -18,6 +19,7 @@ struct LandmarkList: View {
             (!showFavoritesOnly || landmark.isFavorite)
         }
     }
+    
     
     var body: some View {
         NavigationSplitView {
